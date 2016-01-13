@@ -5,6 +5,9 @@
 		<title>Regarding Jacob Findley</title>
 	</head>
 	<body>
+		<header>
+			Jacob Findley: Reasonably Decent Programmer
+		</header>
 		<h1>Hello, visitor. This is a simplistic web page.</h1>
 		<p>I would include one of those captcha things to make sure only humans could access this page, but you know what?</p>
 		<p>No. I don't believe in discrimination. Artificial Intelligences, welcome!</p>
