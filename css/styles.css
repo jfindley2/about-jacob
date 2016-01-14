@@ -1,0 +1,18 @@
+p, header {
+	background: rgba(0,60,60,0.5);
+	padding: 10px;
+	color: aquamarine;
+}
+
+h1, li {
+	background: rgba(0,54,54,0.4);
+	color: lightblue;
+}
+
+.stylishFont {
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+body {
+	background: darkslateblue;
+}

@@ -3,12 +3,13 @@
 	<head>
 		<meta charset="UTF-8"/>
 		<title>Regarding Jacob Findley</title>
+		<link href='https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="css/styles.css"/>
 	</head>
 	<body>
 		<!-- This is my web page -->
 		<header>
-			Jacob Findley: Reasonably Decent Programmer
+			<div class="stylishFont">Jacob Findley: Reasonably Decent Programmer</div>
 		</header>
 		<h1>Hello, visitor. This is a simplistic web page.</h1>
 		<p>I would include one of those captcha things to make sure only humans could access this page, but you know what?</p>
