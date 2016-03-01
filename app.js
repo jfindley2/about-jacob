@@ -1,0 +1,1 @@
+var fileUpload = angular.module("fileUpload", ["ngFileUpload"]);

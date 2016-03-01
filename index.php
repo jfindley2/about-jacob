@@ -1,36 +1,26 @@
 <!DOCTYPE html>
-<html>
+<html >
 	<head>
-		<meta charset="UTF-8"/>
-		<title>Regarding Jacob Findley</title>
-		<link href='https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz' rel='stylesheet' type='text/css'>
-		<link rel="stylesheet" href="css/styles.css"/>
-	</head>
-	<body>
-		<!-- This is my web page -->
-		<header>
-			<div class="stylishFont">Jacob Findley: Reasonably Decent Programmer</div>
-		</header>
-		<h1>Hello, visitor. This is a simplistic web page.</h1>
-		<p>I would include one of those captcha things to make sure only humans could access this page, but you know what?</p>
-		<p>No. I don't believe in discrimination. Artificial Intelligences, welcome!</p>
-		<p>(Um, I'd like to apologise on behalf of humanity if your first contact with us was through the internet. If so, you probably received insults, were described with derogatory and often contradictory epithets, and had your ancestry questioned. It probably wasn't personal. Most of us aren't like that when in person.)</p>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
 
-		<h2>Details about me:</h2>
-		<ul>
-			<li>I am fond of writing and mathematics. I'm proud of myself for my skills in these areas.</li>
-			<li>I enjoy running and boxing. Of my skills in these areas, no comment.</li>
-			<li>I have two dogs.</li>
-			<li>(Cats are nice, too.)</li>
-			<li>You can call me Jake.</li>
-			<li>I secretly wonder what it would be like if my nickname was Jack instead of Jake.</li>
-			<li>One of my pet peeves is the fact that food products need to be advertised as, "Organic." That's like advertising water by the fact that <em>yours</em> contains hydrogen atoms. Technically true, but unhelpful.</li>
-			<li>I have dumb pet peeves.</li>
-			<li>I am probably not as smart as I think I am.</li>
-			<li>In classes, my connate timidity is constantly in conflict with my curiosity.</li>
-			<li>In my experience, people are generally nice and have understandable reasons for what they do or believe.
-			I understand that there are exceptions, though.</li>
-			<li>I can recognise myself in a mirror, and have demonstrated the ability to create and use tools.</li>
-		</ul>
-	</body>
-</html>
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular.js"></script>
+		<script type="text/javascript" src="https://angular-file-upload.appspot.com/js/ng-file-upload-shim.js"></script>
+		<script type="text/javascript" src="https://angular-file-upload.appspot.com/js/ng-file-upload.js"></script>
+
+		<script src="app.js"></script>
+		<script src="script.js"></script>
+
+
+	</head>
+
+	<body ng-controller="MyCtrl" class="ng-scope ng-binding">
+		<form ng-app="fileUpload" ng-controller="MyCtrl" name="form">
+			Remember to click Select
+			<div class="button" ngf-select ng-model="file" name="file" ngf-pattern="'image/*'"
+				  ngf-accept="'image/*'" ngf-max-size="20MB" ngf-min-height="100"
+				  ngf-resize="{width: 100, height: 100}">Select</div>
+			<button type="submit" ng-click="submit()">submit</button>
+		</form>
+
+
+		</body></html>
