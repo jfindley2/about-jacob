@@ -14,13 +14,13 @@
 	</head>
 
 	<body ng-app="FileUpload">
-<!--		<form ng-controller="MyCtrl" name="form" ng-submit="uploadFiles($file);">-->
 		<form ng-controller="MyCtrl" name="form">
+<!--		<form ng-controller="MyCtrl" name="form">-->
 			Remember to click Select
-			<button ng-model="file" ngf-select="uploadFiles($file)" name="file" type="submit">Select</button>
+			<div class="button" ngf-select ng-model="file" name="file">Select</div>
 <!--			<div class="button" ngf-select ng-model="file" name="file" ngf-pattern="'image/*'"-->
 <!--				  ngf-accept="'image/*'" >Select</div>-->
-			<button type="submit">submit</button>
+			<button type="submit" ng-click="submit()">submit</button>
 			<pre>{{ file.name | json }}</pre>
 		</form>
 
